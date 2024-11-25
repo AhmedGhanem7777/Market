@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class VendorLoginComponent {
 
+
+
+  showPassword: boolean = false;
+  
+  togglePasswordVisibility() {
+    this.showPassword = !this.showPassword;
+  }
 }

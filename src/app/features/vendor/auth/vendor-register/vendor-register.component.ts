@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrl: './vendor-register.component.scss'
 })
 export class VendorRegisterComponent {
+  showPassword: boolean = false;
+  showConfirmPassword: boolean = false;
 
+  togglePasswordVisibility(field: 'password' | 'confirmPassword') {
+    if (field === 'password') {
+      this.showPassword = !this.showPassword;
+    } else {
+      this.showConfirmPassword = !this.showConfirmPassword;
+    }
+  }
 }
