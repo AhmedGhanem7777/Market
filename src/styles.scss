@@ -6,6 +6,7 @@
 :root{
     --main-color: #1E88E5;
     --second-color: #64B5F6;
+    --second-color: #64B5F6;
 }
 * {
   margin: 0;
@@ -38,7 +39,7 @@ input, button {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, var(--main-color) 0%, var(--second-color) 100%);
+  // background: linear-gradient(135deg, var(--main-color) 0%, var(--second-color) 100%);
 }
 
 .auth-card {
@@ -53,6 +54,7 @@ input, button {
 
 .slide-down {
   animation: slideDown 0.5s ease-out;
+  color: var(--main-color) !important;
 }
   
 .bounce {
@@ -110,3 +112,31 @@ input, button {
 .cursor-pointer{
     cursor: pointer;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
