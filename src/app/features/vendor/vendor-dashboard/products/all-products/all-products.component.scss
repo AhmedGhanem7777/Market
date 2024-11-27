@@ -1,0 +1,30 @@
+.products-page {
+    padding: 20px;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    animation: fadeIn 0.3s ease-out;
+  }
+  
+  .products-container {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .products-container {
+      grid-template-columns: 1fr;
+    }
+  }

@@ -12,6 +12,10 @@ import { CategoriesComponent } from './products/categories/categories.component'
 import { ManageProductComponent } from './products/manage-product/manage-product.component';
 import { MySettingComponent } from './settings/my-setting/my-setting.component';
 import { MyProfileComponent } from './settings/my-profile/my-profile.component';
+import { ProductHeaderComponent } from './products/product-header/product-header.component';
+import { ProductFiltersComponent } from './products/product-filters/product-filters.component';
+import { ProductListComponent } from './products/product-list/product-list.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -26,11 +30,15 @@ import { MyProfileComponent } from './settings/my-profile/my-profile.component';
     CategoriesComponent,
     ManageProductComponent,
     MySettingComponent,
-    MyProfileComponent
+    MyProfileComponent,
+    ProductHeaderComponent,
+    ProductFiltersComponent,
+    ProductListComponent
   ],
   imports: [
     CommonModule,
-    VendorDashboardRoutingModule
+    VendorDashboardRoutingModule,
+    FormsModule
   ]
 })
 export class VendorDashboardModule { }

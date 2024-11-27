@@ -1,0 +1,46 @@
+.filters-panel {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .filters-panel h3 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .filter-section {
+    margin-bottom: 25px;
+  }
+  
+  .filter-section h4 {
+    font-size: 14px;
+    color: #6c757d;
+    margin-bottom: 15px;
+  }
+  
+  .form-check {
+    margin-bottom: 10px;
+  }
+  
+  .price-inputs {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .price-inputs span {
+    color: #6c757d;
+  }
+  
+  .price-inputs input {
+    width: 100px;
+  }
+  
+  @media (max-width: 768px) {
+    .filters-panel {
+      margin-bottom: 20px;
+    }
+  }

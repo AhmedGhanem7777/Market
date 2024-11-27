@@ -1,0 +1,50 @@
+<div class="filters-panel">
+    <h3>Filters</h3>
+    
+    <div class="filter-section">
+      <h4>Status</h4>
+      <div class="form-check">
+        <input type="radio" class="form-check-input" id="statusAll" 
+               [(ngModel)]="filters.status" value="all" 
+               (change)="onFilterChange()">
+        <label class="form-check-label" for="statusAll">All</label>
+      </div>
+      <div class="form-check">
+        <input type="radio" class="form-check-input" id="statusActive" 
+               [(ngModel)]="filters.status" value="active" 
+               (change)="onFilterChange()">
+        <label class="form-check-label" for="statusActive">Active</label>
+      </div>
+      <div class="form-check">
+        <input type="radio" class="form-check-input" id="statusInactive" 
+               [(ngModel)]="filters.status" value="inactive" 
+               (change)="onFilterChange()">
+        <label class="form-check-label" for="statusInactive">Inactive</label>
+      </div>
+    </div>
+    
+    <div class="filter-section">
+      <h4>Category</h4>
+      <select class="form-select" [(ngModel)]="filters.category" 
+              (change)="onFilterChange()">
+        @for (category of categories; track category) {
+          <option [value]="category.toLowerCase()">{{ category }}</option>
+        }
+      </select>
+    </div>
+    
+    <div class="filter-section">
+      <h4>Price Range</h4>
+      <div class="price-inputs">
+        <input type="number" class="form-control" 
+               [(ngModel)]="filters.price.min" 
+               (change)="onFilterChange()" 
+               placeholder="Min">
+        <span>to</span>
+        <input type="number" class="form-control" 
+               [(ngModel)]="filters.price.max" 
+               (change)="onFilterChange()" 
+               placeholder="Max">
+      </div>
+    </div>
+  </div>

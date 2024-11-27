@@ -1,0 +1,22 @@
+  <div class="product-header" @slideDown>
+    <div class="header-left">
+      <h1>All Products</h1>
+    </div>
+    
+    <div class="header-right">
+      <div class="search-box">
+        <i class="fas fa-search"></i>
+        <input 
+          type="text" 
+          [(ngModel)]="searchTerm"
+          (input)="onSearch()"
+          placeholder="Search products..."
+          class="form-control"
+        >
+      </div>
+      
+      <button class="btn btn-primary" [routerLink]="['/vendor/vendor-dashboard/dashboard/add-product']">
+        <i class="fas fa-plus"></i> Add New Product
+      </button>
+    </div>
+  </div>

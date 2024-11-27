@@ -1,0 +1,32 @@
+  <div class="container">
+    <div class="product-list">
+      @for (product of products; track product.id) {
+        <div class="product-card animate-in">
+          <div class="product-image">
+            <img [src]="product.image" [alt]="product.name" class="img-fluid">
+          </div>
+          <div class="product-info">
+            <h3>{{ product.name }}</h3>
+            <p class="sku">SKU: {{ product.sku }}</p>
+            <div class="product-details">
+              <span class="price">{{ product.price | currency }}</span>
+              <span class="stock">Stock: {{ product.stock }}</span>
+            </div>
+            <div class="product-status">
+              <span [class]="'status-badge ' + product.status.toLowerCase()">
+                {{ product.status }}
+              </span>
+            </div>
+          </div>
+          <div class="product-actions">
+            <button class="btn btn-outline-primary btn-sm me-2">
+              <i class="fas fa-edit"></i>
+            </button>
+            <button class="btn btn-outline-danger btn-sm">
+              <i class="fas fa-trash"></i>
+            </button>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
