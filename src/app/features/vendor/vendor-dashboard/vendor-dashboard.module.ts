@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { VendorDashboardRoutingModule } from './vendor-dashboard-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { OrdersComponent } from './orders/orders.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 
 import { AccountStatementComponent } from './account-statement/account-statement.component';
@@ -16,13 +15,12 @@ import { ProductHeaderComponent } from './products/product-header/product-header
 import { ProductFiltersComponent } from './products/product-filters/product-filters.component';
 import { ProductListComponent } from './products/product-list/product-list.component';
 import { FormsModule } from '@angular/forms';
-
+import { VendorOrdersComponent } from './orders/vendor-orders/vendor-orders.component';
 
 @NgModule({
   declarations: [
   
     DashboardComponent,
-    OrdersComponent,
     SidebarComponent,
     AccountStatementComponent,
     AddProductComponent,
@@ -33,7 +31,8 @@ import { FormsModule } from '@angular/forms';
     MyProfileComponent,
     ProductHeaderComponent,
     ProductFiltersComponent,
-    ProductListComponent
+    ProductListComponent,
+    VendorOrdersComponent,
   ],
   imports: [
     CommonModule,

@@ -41,7 +41,7 @@
         </li>
   
         <li class="nav-item">
-          <a class="nav-link" [routerLink]="['orders']" (click)="closeMenuOnMobile()">
+          <a class="nav-link" [routerLink]="['vendor-orders']" (click)="closeMenuOnMobile()">
             <i class="fas fa-shopping-cart"></i>
             <span>Orders</span>
           </a>
@@ -107,7 +107,7 @@
 
   <!-- Mobile Navigation -->
   <nav class="mobile-nav">
-    <a [routerLink]="['orders']" class="nav-item" (click)="closeMenuOnMobile()">
+    <a [routerLink]="['vendor-orders']" class="nav-item" (click)="closeMenuOnMobile()">
       <i class="fas fa-clipboard-list"></i>
       <span>Orders</span>
     </a>

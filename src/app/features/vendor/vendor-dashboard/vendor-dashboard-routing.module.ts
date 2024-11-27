@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { NotFoundComponent } from '../../../shared/components/not-found/not-found.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { OrdersComponent } from './orders/orders.component';
 import { AccountStatementComponent } from './account-statement/account-statement.component';
 import { CategoriesComponent } from './products/categories/categories.component';
 import { AllProductsComponent } from './products/all-products/all-products.component';
@@ -10,6 +9,7 @@ import { AddProductComponent } from './products/add-product/add-product.componen
 import { ManageProductComponent } from './products/manage-product/manage-product.component';
 import { MySettingComponent } from './settings/my-setting/my-setting.component';
 import { MyProfileComponent } from './settings/my-profile/my-profile.component';
+import { VendorOrdersComponent } from './orders/vendor-orders/vendor-orders.component';
 
 
 const routes: Routes = [
@@ -21,7 +21,7 @@ const routes: Routes = [
       { path: 'all-products', component: AllProductsComponent },
       { path: 'add-product', component: AddProductComponent },
       { path: 'manage-product', component: ManageProductComponent },
-      { path: 'orders', component: OrdersComponent },
+      { path: 'vendor-orders', component: VendorOrdersComponent },
       { path: 'account-statement', component: AccountStatementComponent },
       { path: 'my-setting', component: MySettingComponent },
       { path: 'my-profile', component: MyProfileComponent },
